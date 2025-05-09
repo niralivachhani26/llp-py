@@ -7,3 +7,4 @@ class Section8Admin(admin.ModelAdmin):
     list_editable = ('display_order',)
     search_fields = ('client_name', 'client_role')
     list_filter = ('rating',)
+

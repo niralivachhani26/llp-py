@@ -70,7 +70,7 @@
         </div>
 
         <!-- Swiper Pagination -->
-        <div class="swiper-pagination mt-16"></div>
+        <div class="swiper-pagination" style="margin-top: 80px;"></div>
       </div>
   </section>
 
@@ -78,19 +78,22 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
+      slidesPerView: 3,
       spaceBetween: 24,
-      loop: true,
+      loop: false,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
+      slidesPerGroup: 3,
       breakpoints: {
         768: {
           slidesPerView: 2,
+          slidesPerGroup: 2,
         },
         1024: {
           slidesPerView: 3,
+          slidesPerGroup: 3,
         },
       },
     });
