@@ -1,0 +1,9 @@
+# Auto detect text files and normalize to LF
+* text=auto
+
+# Force Python and HTML files to use LF
+*.py text eol=lf
+*.html text eol=lf
+*.txt text eol=lf
+*.css text eol=lf
+*.js text eol=lf
