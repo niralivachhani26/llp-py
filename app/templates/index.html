@@ -1,0 +1,21 @@
+{% extends 'layout/header.html' %}
+{% load static %}
+{% block content %}
+<div class="slider-container">
+    <div class="slider">
+        {% for banner in banners %}
+        <div class="slide" style="background-image: url('{% static banner.image_url %}');">
+            <div class="overlay">
+                <h3>About Our Company</h3>
+                <h1>Custom Signs, Branding & Visual Marketing <span>For Your Business.</span></h1>
+                <p>We create high-quality, custom signage that grabs attention and enhances your brand...</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Get A Quote</a>
+                    <a href="/projects" class="btn">Explore Our Work</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
