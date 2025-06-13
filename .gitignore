@@ -13,4 +13,8 @@ staticfiles/
 .env
 
 # VS Code
+<<<<<<< HEAD
 .vscode/
+=======
+.vscode/
+>>>>>>> homepage_section8_10_new

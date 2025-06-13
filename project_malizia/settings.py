@@ -55,7 +55,11 @@ ROOT_URLCONF = "project_malizia.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
+<<<<<<< HEAD
         "DIRS": [],
+=======
+        "DIRS": [BASE_DIR, 'templates'],
+>>>>>>> homepage_section8_10_new
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -124,3 +128,11 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+<<<<<<< HEAD
+=======
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+>>>>>>> homepage_section8_10_new
